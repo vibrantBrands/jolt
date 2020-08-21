@@ -1,0 +1,427 @@
+.page-template-homepage,
+.page-template-home {
+
+    h2 {
+        color: $primary-color;
+        font-size: $h1-font-size;
+        font-weight: 700;
+    }
+
+    .container {
+        text-align: center;
+        padding: 40px;
+        
+        @media only screen and (max-width: $lg-breakpoint) {
+            margin: 0;
+            //padding: 2% 6%;
+        }
+
+    }
+
+    .soft-gradient {
+        background: -webkit-linear-gradient(#f1fbff 0%, #ffffff 100%);
+        background: -o-linear-gradient(#f1fbff 0%, #ffffff 100%);
+        background: linear-gradient(#f1fbff 0%, #ffffff 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1fbff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    }
+
+	.hero {
+    	//background: #999999;
+        color: $white;
+        //height: $hero-height;
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+            
+            @media only screen and (max-width: $xl-breakpoint) {
+                max-width: 3000px;
+            }
+
+        }
+
+        >div {
+        	justify-content: flex-end;
+ 
+        	.slick-slide {
+
+        		div {
+        			position: relative;
+                    text-align: center;
+
+        			p {
+        				font-size: $hero-font-size;
+        				font-weight: bold;
+        				line-height: $hero-line-height;
+        				position: absolute;
+        				right: 50px;
+        				text-align: center;
+        				width: 45%;
+
+        				@media only screen and (max-width: $md-breakpoint) {
+							width: 90%;
+							right: auto;
+							position: relative;
+                            margin: 0 auto;
+						}
+        			}
+        		}
+        	}
+        }
+    }
+
+    button {
+        @media only screen and (max-width: $lg-breakpoint) {
+            display: none;
+        }
+    }
+
+     img {
+        height: auto;
+
+         @media only screen and (max-width: $lg-breakpoint) {
+            width: 90%;
+        }
+        
+    }
+
+    .half-box {
+        h2 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    .customer-relations {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            align-items: center;
+            flex-direction: column;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: $white;
+            font-size: $h3-font-size;
+            font-weight: bold;
+            line-height: $h3-line-height;
+            margin-top: 80px;
+            min-height: 60px;
+            width: 80%;
+
+            @media only screen and (max-width: $lg-breakpoint) {
+                width: 65%;
+            }
+        }
+
+        >a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            >div {
+                align-items: center;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin: 0 10px;
+                max-width: 300px;
+                height: 100%;
+
+                p {
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.4em;
+                    margin-top: 20px;
+                    padding: 20px;
+
+                    @media only screen and (max-width: $lg-breakpoint) {
+                        width: 65%;
+                    }
+                }
+
+                @media only screen and (max-width: $lg-breakpoint) {
+                    margin-top: 100px;
+                }
+            }
+
+            &:first-child {
+
+                div {
+                    background: -webkit-linear-gradient(left, #14e0e3 1%, #1cb9f7 100%);
+                    background: -o-linear-gradient(left, #14e0e3 1%, #1cb9f7 100%);
+                    background: linear-gradient(to right, #14e0e3 1%, #1cb9f7 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14e0e3', endColorstr='#1cb9f7',GradientType=1 ); /* IE6-9 */
+                }
+
+            }
+
+            &:nth-child(2) {
+                
+                div {
+                    background: #1cb9f7; /* Old browsers */
+                    background: -moz-linear-gradient(left,  #1cb9f7 2%, #006bff 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  #1cb9f7 2%,#006bff 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  #1cb9f7 2%,#006bff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb9f7', endColorstr='#006bff',GradientType=1 ); /* IE6-9 */
+                }
+            }
+
+            &:nth-child(3) {
+                
+                div {
+                    background: #006bff; /* Old browsers */
+                    background: -moz-linear-gradient(left,  #006bff 0%, #0d0ead 99%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  #006bff 0%,#0d0ead 99%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  #006bff 0%,#0d0ead 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006bff', endColorstr='#0d0ead',GradientType=1 ); /* IE6-9 */
+                    }
+
+            }
+
+            &:nth-child(4) {
+                
+                div {
+                    background: #0d0ead; /* Old browsers */
+                    background: -moz-linear-gradient(left,  #0d0ead 0%, #100865 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  #0d0ead 0%,#100865 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  #0d0ead 0%,#100865 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0ead', endColorstr='#100865',GradientType=1 ); /* IE6-9 */
+                }
+            }
+        }
+
+        div {
+            position: relative;
+        }
+
+        img {
+            align-self: center;
+            position: absolute;
+            top: -65px;
+            max-width: 150px;
+
+            &.activate {
+                transition: .3s ease-out all;
+                transform: translateY(-30px);
+            }
+            &.deactivate {
+                transition: .3s ease-out all;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    .testimonial-wrapper {
+        padding: 0;
+    }
+
+    .testimonials {
+        //background: url('../images/diamond.png') no-repeat;
+        background-position: 50px;
+        background-size: 45%;
+        position: relative;
+        min-height: 350px;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            min-height: 500px;
+        }
+        @media only screen and (max-width: $sm-breakpoint) {
+            min-height: 650px;
+        }
+        h3 {
+            font-weight: bold;
+        }
+
+        .half-box {
+            margin-top: 0;
+
+            @media only screen and (max-width: $lg-breakpoint) {
+                flex-direction: column;
+            }
+
+            >div {
+                padding: 0;
+
+                @media only screen and (max-width: $xl-breakpoint) {
+                    padding: 0 3%;
+                }
+            }
+        }
+
+        .fa-arrow-circle-left,
+        .fa-arrow-circle-right {
+            cursor: pointer;
+            font-size: 1.5em;
+            position: absolute;
+            top: 110px;
+
+            @media only screen and (max-width: $lg-breakpoint) {
+                top: 70px;
+            }
+
+            &:before {
+                color: $primary-color;
+            }
+        }
+        
+        .fa-arrow-circle-left {
+            left: 0;
+
+            @media only screen and (min-width: $md-breakpoint) {
+                left: 8%;
+            }
+        }
+
+        .fa-arrow-circle-right {
+            right: 0;
+
+            @media only screen and (min-width: $md-breakpoint) {
+                right: 8%;
+            }
+        }
+
+        .testimonial-slide {
+            position: absolute;
+
+            .logo-container {
+                margin: 40px 0 0;
+
+                @media only screen and (max-width: $lg-breakpoint) {
+                    margin: 0 0 0 40px;
+                }
+            }
+        }
+         
+        .half-box {
+            display: none;
+
+            >div {
+                align-items: flex-start;
+                position: relative;
+
+                &:first-child {
+                    align-items: center;
+                    display: flex;
+
+                    @media only screen and (max-width: $sm-breakpoint) {
+                        display: block;
+                    }
+                }
+
+                &:nth-child(2) {
+                    @media only screen and (max-width: $sm-breakpoint) {
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            &:first-child,
+            &.show {
+                display: flex;
+
+                @media only screen and (max-width: $sm-breakpoint) {
+                    display: block;
+                }
+            }
+
+            &.hide {
+                display: none;
+            }
+
+            &.fa-arrow-circle-left,
+            &.fa-arrow-circle-right {
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+
+     .insight,
+     .adoption,
+     .powerup,
+     .build {
+        transition: .5s ease-out all;
+        position: absolute;
+        top: 40px;
+    }
+
+    .build {
+        margin-left: 30px;
+        top: 0;
+    }
+
+    .insight {
+        top: 0;
+    }
+
+    .powerup {
+        @media only screen and (max-width: $lg-breakpoint) {
+            left: 0;
+        }
+    }
+
+    .activate {
+        transform: translateY(-40px);
+    }
+
+    .adoption {
+        width: 92%;
+        margin-left: 21px;
+        top: 0;
+
+        &.activate {
+            transform: translateY(-30px);
+        }
+    }
+    .graphics {
+        padding: 0 2%;
+
+        @media only screen and (max-width: $xl-breakpoint) {
+            flex-direction: column;    
+        }
+
+        .buildtext {
+            padding-top: 80px;
+
+            @media only screen and (max-width: $xl-breakpoint) {
+                padding-top: 0;
+                padding-bottom: 30px;
+            }
+        }
+        .adoptiontext {
+            padding-top: 60px;
+
+            @media only screen and (max-width: $xl-breakpoint) {
+                padding-top: 0;
+            }
+        }
+
+        .base {
+            margin-left: 30px;
+        }
+
+        img {
+            display: block;
+
+            @media only screen and (max-width: $lg-breakpoint) {
+                display: none;
+            }
+        }
+
+        .half-box {
+             @media only screen and (max-width: 1180px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

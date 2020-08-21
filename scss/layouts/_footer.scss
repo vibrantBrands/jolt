@@ -1,0 +1,216 @@
+
+.jolt {
+
+	footer {
+
+		h2 {
+			color: $white;
+			font-weight: bold;
+			margin-top: 0;
+			padding-top: 50px;
+		}
+
+		img {
+	       @media only screen and (max-width: $lg-breakpoint) {
+	       	    margin: 30px auto;
+	            width: 80%;
+	        }
+	    }
+
+	    .container {
+	    	text-align: center;
+	    	padding-bottom: 50px;
+	    }
+
+	     .wheelchair {
+	        max-width: 100px;
+	       }
+
+	    p {
+	    	text-align: center;
+	    }
+
+	    .half-box {
+	    	h2 {
+	    		@media only screen and (max-width: $lg-breakpoint) {
+	       	 	   margin-top: 0;
+	        	}
+	    	}
+	    	>div {
+	    		align-items: center;
+	    		text-align: center;
+
+	    		&:nth-child(2) {
+	    			margin-right: 150px;
+
+	    			@media only screen and (max-width: $lg-breakpoint) {
+		       	 	   margin: 0;
+		       	 	   width: 100%;
+		        	}
+	    		}
+	    	}
+	    }
+
+	    input.submit {
+	    	background: $orange-color;
+	    	border: 0;
+	    	color: white;
+	    }
+
+		.connect {
+			background: url("../images/contact-bg.png") no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-position: -200px -20px;
+			color: $white;
+			min-height: 330px;
+			padding-bottom: 40px;
+
+			@media only screen and (max-width: 1700px) {
+				background-position: -200px -20px;
+	        }
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				background: $primary-color;
+	            width: auto;
+	            min-height: 10px;
+	        }
+
+			.half-box {
+
+				@media only screen and (max-width: $lg-breakpoint) {
+		            min-height: 10px;
+		        }
+			}
+		}
+
+		.social {
+				margin-top: 50px;
+
+				a {
+					color: $white;
+				}
+
+				.fab {
+					border: 1px solid #389ED9;
+					border-radius: 60px;
+					font-size: 2em;
+					margin: 0 20px;
+					padding: 10px 11px;
+
+					@media only screen and (max-width: $lg-breakpoint) {
+						margin: 0px 5px;
+			        } 
+				}
+			}
+
+		input[type="text"],
+		input[type="email"],
+		#services {
+			border: 0;
+			padding: 10px;
+			width: 200px;
+			border-radius: 8px;
+		}
+
+		#email {
+			border-radius-bottom-right: 0;
+			border-radius-top-right: 0;
+		}
+		
+		.logos {
+			align-items: center;
+			background: $white;
+			margin-bottom: 10px;
+			padding: 30px 0;
+
+			&.container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+
+				@include flex-col-layout();
+			}
+
+			span {
+				color: $orange-color;
+				margin-left: 5px;
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+		}
+
+		.bottombar {
+			background: $secondary-color;
+			color: $primary-color;
+			padding: 8px 0;
+			text-align: center;
+		}
+
+		&.alternate-footer {
+
+			h2 {
+				 margin-bottom: 5px;
+			}
+
+			p {
+				color: $white;
+				margin-bottom: 40px;
+			}
+
+			.forms {
+				background: $primary-color;
+			}
+
+			#saveForm {
+				border: none;
+				font-weight: bold;
+				height: inherit;
+				margin-top: 40px;
+				outline: none;
+				padding: 10px 30px;
+				text-transform: uppercase;
+				width: 130px !important;
+			}
+
+			.fields {
+				margin: 0 auto;
+				width: 80%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					align-items: center;
+					display: flex;
+					flex-direction: column;
+			    } 
+
+			    input, select {
+			    	margin-top: 10px;
+			    }
+			}
+
+			.container {
+				margin-top: 0;
+			}
+
+			.social {
+				margin-top: 0;
+			}
+		}
+
+		.input-box {
+			display: flex;
+			width: 100%;
+
+			>div {
+				width: 100%;
+			}
+
+			#saveForm {
+				padding: 10px;
+				border-bottom-right-radius: 8px;
+				border-top-right-radius: 8px;
+				margin-left: -8px;
+			}
+		}
+	}
+}

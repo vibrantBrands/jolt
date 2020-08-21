@@ -1,0 +1,75 @@
+/**  Wufoo form styles **/
+
+html.embed {
+	background: none;
+}
+
+form ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	@media only screen and (min-width: 900px) {
+		flex-direction: row;
+    }
+
+	li {
+		flex: 1 1 0;
+	}
+}
+
+#header,
+.wufoo .info {
+	display: none;
+}
+
+iframe {
+	height: 150px;
+}
+
+form li.buttons {
+	width: 100% !important;
+	text-align: center;
+}
+
+.wufoo input,
+.wufoo select.select {
+	border-radius: 8px;
+	padding: 6px;
+	width: 90% !important;
+
+	@media only screen and (max-width: 900px) {
+		margin: 0;
+    }
+}
+
+.wufoo label.desc {
+	color: white !important;
+}
+
+.wufoo li span label {
+	color: white;
+}
+
+.wufoo li.focused {
+	background-color: #00235e !important;
+}
+
+.wufoo #saveForm {
+	background: #e2713e;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.confirm h2 {
+	color: white;
+}
+

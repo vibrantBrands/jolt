@@ -1,0 +1,122 @@
+.case-submitted > h5{
+    color: black;
+    font-size: 32px;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+
+.case-submitted > p{
+    font-size: 24px !important;
+    margin: 0% 5%;
+    text-align: center;
+}
+
+/* Submit Case Form */
+#case-information{
+    display: none;
+}
+
+.modal-overlay{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(90,90,90,0.8);
+    z-index: 999;
+    display: none;
+    
+}
+.submit-case-modal{
+    border-radius: 6px 6px;
+    position: absolute;
+    z-index: 1000;
+    background-color: #032360;
+    top: 30px !important;
+}
+
+#case-information > .form-title{
+    color: #dddddd;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#case-information > .form-subtitle{
+    color: #dddddd;
+    font-size: 18px;
+    margin: 1% 5%;
+    text-align: center;
+}
+
+#case-information > form > input:not(#submit-form-btn){
+    width: 90%;
+    height: 30px;
+    border-radius: 4px 4px;
+    margin: 1% 5%;
+    font-size: 18px;
+    z-index: 5;
+    padding-top: 2.5px;
+    padding-left: 5px;
+
+}
+
+#case-information > form{
+    margin-top: 5%;
+}
+
+#case-information > form > textarea{
+    width: 90%;
+    height: 75px;
+    margin: 1% 5%;
+    border-radius: 2px 2px;
+    padding-top: 2.5px;
+    padding-left: 5px;
+    resize: none;
+}
+
+#case-information > form> label{
+    margin-left: 5%;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #f3602a;
+    text-align: left;
+}
+
+#case-information > form > #submit-form-btn{
+    width: 300px;
+    height: 10%;
+    margin-left: 20%;
+
+    font-size: 24px;
+    background-color: #0c4fb4;
+    color: white;
+    box-shadow: 4px 4px black;
+    border: 1px solid black;
+    border-radius: 4px 4px;
+    
+    cursor: pointer;
+    z-index: 10;
+}
+
+#case-information > form > .g-recaptcha{
+    display: block;
+    margin-left: 20%;
+    margin-top: 2.5%;
+}
+
+#case-information > form > #submit-form-btn :active{
+    box-shadow: 0px 0px;
+}
+
+.salesforce-btn {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.salesforce-btn .orange-btn{
+    margin: 0 auto;
+}
+
+/* END Submitted Case Form */

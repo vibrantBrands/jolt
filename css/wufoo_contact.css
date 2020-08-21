@@ -1,0 +1,29 @@
+/**  Wufoo contact form styles **/
+
+#header,
+.wufoo .info {
+  display: none;
+}
+
+.wufoo #saveForm {
+  background: #e2713e;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.redesigned-theme-2018 .wufoo label.desc, 
+.wufoo li span label {
+  color: #00235e !important;
+}
+
+.redesigned-theme-2018 .wufoo label.desc {
+  font-weight: bold !important;
+} 

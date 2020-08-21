@@ -1,0 +1,315 @@
+
+%button {
+    background: $btn-color;
+    border-radius: 5px;
+    border: none;
+    color: $white;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-out;
+
+    .fa {
+        margin-left: 5px;
+    }
+
+    &:hover {
+        background: $btn-hover;
+        color: $white;
+    }
+
+    &.black {
+        background: $black;
+
+        .fa {
+            color: $primary-color;
+        }
+
+        &:hover {
+            background: $primary-color;
+
+            .fa {
+                color: $white;
+            }
+        }
+    }
+}
+
+.jolt {
+    
+    /* {
+        border: 1px solid;
+    }*/
+
+    font-family: $baseFont;
+    color: $primary-color;
+
+    .container {
+    	margin: 0 auto;
+    	max-width: $content-max-width;
+        padding: 60px 0;
+    }
+
+    h1 {
+        color: $primary-color;
+        font-size: $h1-font-size;
+        line-height: $h1-line-height;
+        font-weight: 700;
+        margin: 0 0 10px;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        padding-top: 40px;
+        margin: 0 0 20px;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: $h3-font-size;
+          margin: 40px 0 20px;
+    }
+
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: $p-font-size;
+        line-height: 1.5em;
+    }
+
+    img {
+       @media only screen and (max-width: $lg-breakpoint) {
+            //width: 90%;
+        } 
+    }
+
+    hr {
+        margin: 50px auto;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    sup {
+        font-size: 11px;
+        top: -9px;
+        margin-left: 3px;
+        font-style: normal;
+    }
+
+    ul, ol {
+        li {
+            line-height: 24px;
+        }
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    span.orange-btn {
+        
+        a {
+            @extend %button;
+        }
+    }
+    
+    span.blue-btn {
+
+        a {
+            @extend %button;
+                //* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0076ff+0,00b1f0+100 */
+                background: #0076ff; /* Old browsers */
+                background: -moz-linear-gradient(left,  #0076ff 0%, #00b1f0 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left,  #0076ff 0%,#00b1f0 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right,  #0076ff 0%,#00b1f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076ff', endColorstr='#00b1f0',GradientType=1 ); /* IE6-9 */
+                font-size: 25px;
+                margin: 50px auto;
+                padding: 20px;
+                transition: all .3s ease-out;
+
+            &:hover {
+               background: -webkit-linear-gradient(left, #00b1f0 0%, #0076ff 100%);
+               background: -o-linear-gradient(left, #00b1f0 0%, #0076ff 100%);
+               background: linear-gradient(to right, #00b1f0 0%, #0076ff 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b1f0', endColorstr='#0076ff',GradientType=1 ); /* IE6-9 */
+            }
+        }
+           
+    }
+
+    .half-box {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            margin: 0 auto 20px;
+        }
+
+         @media only screen and (max-width: $md-breakpoint) {
+            flex-direction: column;
+        }
+
+        >div {
+            //align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0px;
+            justify-content: center;
+            padding: 0 2%;
+            position: relative;
+            text-align: left;
+            
+
+            @media only screen and (max-width: 1180px) {
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        h2 {
+            @media only screen and (max-width: $lg-breakpoint) {
+                margin-top: 60px;
+            }
+        }
+    }
+
+    a {
+        color: $orange-color;
+        text-decoration: underline;
+    }
+
+    .half-wrapper {
+        display: block;
+        position: relative;
+    }
+
+    .flip {
+
+        >div {
+            display: block;
+        }
+
+        @media only screen and (max-width: 1180px) {
+            display: flex;
+            flex-direction: column-reverse !important;
+        }
+    }
+
+
+
+    .container {
+        text-align: left;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            flex-direction: column;
+        }
+    }
+
+    .drop-shadow {
+
+        img {
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+    }
+
+    .fa-angle-down {
+        color: $orange-color;
+        font-size: 35px;
+        margin-right: 5px;
+    }
+
+    .orange-link {
+        align-self: flex-start; 
+        display: block;
+        transition: .3s ease-out all;
+        transform: translateY(0px); 
+        
+        a { 
+            color: $btn-color;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 10px 0 0;
+            text-decoration: none;
+
+             &:hover {
+               transform: translateY(-5px);
+            }
+        }
+
+       
+    }
+
+    ul {
+        text-align: left;
+        list-style-type: disc;
+        font-size: 18px;
+        line-height: 1.6em;
+    }
+
+    .slick-dots {
+        text-align: center;
+    }
+
+    .byline {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .fa-download {
+        color: $orange-color;
+        margin-right: 5px;
+    }
+
+    img.mobile {
+        display: none !important;
+        max-width: 750px;
+        height: auto;
+        align-self: center;
+        width: 100%;
+
+        @media only screen and (max-width: 1180px) {
+            display: block !important;
+        }
+    }
+
+    img.desktop {
+        display: block;
+
+         @media only screen and (max-width: 1180px) {
+            display: none !important;
+        }
+    }
+
+    .orange-header {
+        color: $orange-color;
+    }
+}
+
+.redesigned-theme-2018 #logo {
+    display: none;
+}
+
+.clearfix {
+    clear: both;
+}

@@ -1,0 +1,44 @@
+// Fonts
+$baseFont: 'Montserrat', sans-serif;
+$secondaryFont: 'Montserrat', serif;
+$font-stack-system: 'Montserrat', sans-serif;
+$filter-font: 'Roboto Condensed', sans-serif;
+
+// Font sizes
+$h1-font-size: 30px;
+$h1-line-height: 37px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h3-line-height: 32px;
+$hero-font-size: 40px;
+$p-font-size: 18px;
+$hero-line-height: 45px;
+$text-font-size: 22px;
+$text-line-height: 32px;
+
+$hero-height: 500px;
+
+// Colors
+$black: black;
+$white: white;
+$primary-color: #0E2246; // Dark Blue
+$secondary-color: #ecf5fa; // Light Blue
+$orange-color: #e2713e; // Orange Color
+$hr-color: #c0d3de;
+$btn-color: $orange-color; // Button Color
+$btn-hover: darken($btn-color, 10%);
+
+
+// Breakpoints
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1180px;
+
+
+// Content width
+$content-max-width: 1200px;
+$paragraph-line-height: 1.5em;
+$menu-transition: .3s all ease-out;
+$homepage-section-padding: 20px 30px;
+
