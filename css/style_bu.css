@@ -3990,17 +3990,6 @@ textarea {
   min-height: 0;
   padding-bottom: 0;
   width: 100%; }
-  .jolt header .alert {
-    background: #F07D00; }
-    .jolt header .alert .container {
-      padding: 0; }
-      .jolt header .alert .container a {
-        color: white; }
-      .jolt header .alert .container p {
-        color: white;
-        font-weight: 600;
-        margin: 0;
-        padding: 20px; }
   .jolt header .navigation {
     align-items: center;
     font-weight: normal;
@@ -4009,7 +3998,6 @@ textarea {
     font-size: 1em;
     justify-content: space-between;
     min-height: 80px;
-    position: relative;
     top: 0;
     width: 100%;
     z-index: 3; }
@@ -4037,7 +4025,7 @@ textarea {
       height: 26px;
       margin: -12px 0 0 20px;
       right: 20px;
-      position: absolute;
+      position: fixed;
       top: 45px;
       width: 40px;
       z-index: 5; }

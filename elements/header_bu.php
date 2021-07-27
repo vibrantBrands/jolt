@@ -14,20 +14,13 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/web-to-case.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/lity.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/style.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body class="jolt">
   <div class="<?php echo $c->getPageWrapperClass()?>">
 
   <header>
-    <div class="alert">
-      <div class="container">
-        <?php
-          $a = new Area("Alert Box");
-          $a->display();
-        ?>
-      </div>
-    </div>
     <div class="navigation">
       <div class="toggle-wrapper">
         <p>MENU</p>

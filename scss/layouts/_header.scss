@@ -6,6 +6,25 @@
 		padding-bottom: 0;
 		width: 100%;
 
+		.alert {
+			background:  #F07D00;
+
+			.container {
+				padding: 0;
+
+				a {
+					color: $white;
+				}
+
+				p {
+					color: $white;
+					font-weight: 600;
+					margin: 0;
+					padding: 20px;
+				}
+			}
+		}
+
 		.navigation {
 			align-items: center;
 			font-weight: normal;
@@ -14,6 +33,7 @@
 			font-size: 1em;
 			justify-content: space-between;
 			min-height: 80px;
+			position: relative;
 			top: 0;
 			width: 100%;
 			z-index: 3;
@@ -50,7 +70,7 @@
 				height: 26px;
 				margin: -12px 0 0 20px;
 				right: 20px;
-				position: fixed;
+				position: absolute;
 				top: 45px;
 				width: 40px;
 				z-index: 5;

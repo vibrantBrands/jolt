@@ -11,7 +11,15 @@
 
 <div class="container service">
 	<h1>Service. Expertise. Results.</h1>
-	<p>Optimize customer management with technology built for today, and a partnership ready for tomorrow.
+	<p>Optimize customer management with technology built for today, and a partnership ready for tomorrow.</p>
+	<p>
+		<p>
+		<?php
+			$a = new Area("Get in Touch Button Top");
+			$a->display();
+		?>
+	</p>
+	</p>
 </div>
 
 <div class="soft-gradient">
